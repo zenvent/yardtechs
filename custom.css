@@ -17,12 +17,6 @@ body {
   margin-bottom: 4rem;
 }
 
-.carousel-slide-div {
-  width: 80%;
-  max-width: 1920px;
-  margin: 3rem auto;
-}
-
 /* Since positioning the image, we need to help out the caption */
 .carousel-caption {
   bottom: 3rem;
