@@ -14,16 +14,15 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
 
-    <!-- Custom styles for this template -->
     <link href="custom.css" rel="stylesheet">
   </head>
   <body>
 
     <header>
         <div class="container" style="text-align: right">
-            <a href="#" title="Call or Email" data-toggle="popover" data-html="true" data-trigger="hover" data-content="614.496.6921<br/>Bob@YardTechs.com">Contact Us</a>
+            <a href="#" title="Call or Email" data-toggle="popover" data-placement="bottom" data-html="true" data-trigger="hover" data-content="614.496.6921<br/>Bob@YardTechs.com">Contact Us</a>
             &nbsp; | &nbsp; 
-            <a href="#" title="Not Available" data-toggle="popover" data-html="true" data-trigger="hover" data-content="Online payment is not yet available. Please contact us.">Payment</a>
+            <a href="#" title="Not Available" data-toggle="popover" data-placement="bottom" data-html="true" data-trigger="hover" data-content="Online payment is not yet available. Please contact us.">Payment</a>
         </div>
         <h1 class="display-3" style="text-align: center">YardTechs</h1>
         <script>
@@ -34,6 +33,7 @@
     </header>
 
     <main role="main">
+      <div class="carousel-slide-div">
       <div id="myCarousel" class="carousel slide" data-ride="carousel">
         <ol class="carousel-indicators">
           <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
@@ -42,7 +42,7 @@
         </ol>
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img class="first-slide" src="media/cutGrassBanner.jpg">
+            <img class="first-slide" src="media/grassBanner.jpg">
             <div class="container">
               <div class="carousel-caption text-left">
                 <h1>Expert Lawn Care</h1>
@@ -62,7 +62,7 @@
             </div>
           </div>
           <div class="carousel-item">
-            <img class="third-slide" src="media/snow.jpg">
+            <img class="third-slide" src="media/snowBanner.jpg">
             <div class="container">
               <div class="carousel-caption text-right">
                 <h1>Winter Saftey</h1>
@@ -81,60 +81,51 @@
           <span class="sr-only">Next</span>
         </a>
       </div>
-
-
-      <!-- Marketing messaging and featurettes
-      ================================================== -->
-      <!-- Wrap the rest of the page in another container to center all the content. -->
+    </div>
 
       <div class="container marketing">
-
-        <!-- Three columns of text below the carousel -->
         <div class="row">
           <div class="col-lg-4">
             <img src="media/lawnCareIcon.png">
             <br><br>
             <h2>Lawn Care</h2>
-            <p>Relax and let us take care of your lawn. Our lawn care service is tailored to your specific needs.</p>
+            <p>Relax and let us take care of your lawn. Our services are tailored to your specific needs.</p>
             <p><a class="btn btn-secondary" href="#lawncare" role="button">View details &raquo;</a></p>
-          </div><!-- /.col-lg-4 -->
+          </div>
           <div class="col-lg-4">
             <img src="media/installation_icon.png">
             <br><br>
             <h2>Landscaping</h2>
-            <p>We offer an array of services from fall cleanup to tree removal and everything else in between.</p>
+            <p>We offer an array of services from fall cleanup to tree removal and everything in between.</p>
             <p><a class="btn btn-secondary" href="#landScaping" role="button">View details &raquo;</a></p>
-          </div><!-- /.col-lg-4 -->
+          </div>
           <div class="col-lg-4">
             <img src="media/plowIcon.png">
             <br><br>
             <h2>Snow Removal</h2>
-            <p>Our snow removal services can keep your business’s parking lot safe and your home's driveway clear.</p>
+            <p>Our snow removal services can keep your business’s and home's pathways safe.</p>
             <p><a class="btn btn-secondary" href="#winter" role="button">View details &raquo;</a></p>
-          </div><!-- /.col-lg-4 -->
-        </div><!-- /.row -->
-
-
-        <!-- START THE FEATURETTES -->
+          </div>
+        </div>
 
         <hr class="featurette-divider">
 
         <div id="lawncare" class="row featurette">
           <div class="col-md-7">
-            <h2 class="featurette-heading">Lawn Care<p class="text-muted">It'll blow your mind.</p></h2>
+            <h2 class="featurette-heading">Lawn Care<p class="text-muted">Relax, we'll take care of it.</p></h2>
                 <br>
-                <h4>Weed control</h4>
-                <p class="lead"> W </p>
-
                 <h4>Lawn Mowing</h4>
                 <p class="lead"> On a regularly scheduled, weekly basis, we tend your lawn with properly trained personnel, and appropriate and well-maintained equipment.  This service includes weekly mowing and trimming of all grass areas as well as edging along concrete walks, driveways, and patios every two weeks.</p>
 
                 <h4>Grounds Keeping</h4>
                 <p class="lead">We offer several things under our grounds keeping category to include leaf raking, bush trimming, bed cleaning, etc. In addition, we can offer re-mulching, sod, some rock work, edging, etc.</p>
-            </p>
+           
+                <h4>Weed control</h4>
+                <p class="lead"> We can help you keep weeds at by with regular removal and treatments to keep your lawn looking its best at all times.</p>
+              </p>
           </div>
-          <div class="col-md-5">
-            <img class="featurette-image img-fluid mx-auto" src="media/lawnService.jpg">
+          <div class="col-md-5" style="padding-top: 21rem">
+            <img class="featurette-image img-fluid mx-auto img-thumbnail" src="media/lawnService.jpg">
           </div>
         </div>
 
@@ -142,11 +133,24 @@
 
         <div id="landScaping" class="row featurette">
           <div class="col-md-7 order-md-2">
-            <h2 class="featurette-heading">Landscaping<p class="text-muted">Treat your yard.</p></h2>
-            <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+            <h2 class="featurette-heading">Landscaping<p class="text-muted">Make your dream a reality.</p></h2>
+            <br>
+            <p class="lead">We offer many services that can help you get your yard looking how you've always wanted it. Need help planing? Finishing a project that started long ago? We're here to help.</p>
+            <h4>Summary</h4>
+            <ul class="lead">
+                <li>Weekly Mowing and trimming</li>
+                <li>Annual Flowers (Spring, Summer, and Fall)</li>
+                <li>Fertilization</li>
+                <li>Aeration</li>
+                <li>Bed Detail and Weed Control</li>
+                <li>Pruning</li>
+                <li>Fall and Spring Clean Up</li>
+                <li>Plant Health Care</li>
+                <li>Enhancements</li>
+              </ul>
           </div>
-          <div class="col-md-5 order-md-1">
-            <img class="featurette-image img-fluid mx-auto" src="media/landscaping.jpg">
+          <div class="col-md-5 order-md-1" style="padding-top: 20rem">
+            <img class="featurette-image img-fluid mx-auto img-thumbnail" src="media/landscaping.jpg">
           </div>
         </div>
 
@@ -154,25 +158,30 @@
 
         <div id="winter" class="row featurette">
           <div class="col-md-7">
-            <h2 class="featurette-heading">Snow Removal<p class="text-muted">Stay safe this winter.</span></h2>
-            <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+            <h2 class="featurette-heading">Snow Removal<p class="text-muted">Keeping everyone safe.</span></h2>
+            <p class="lead">Stay warm this winter and let us pick up the shovel. We offer snow removal for residental and commercial customers. We keep very close track of weather reports and clean your area as soon as possible so you don't have to.</p>
+            <h4>Our Services</h4>
+            <ul class="lead">
+                <li>Salting and Presalting</li>
+                <li>Clearing Sidewalks</li>
+                <li>Plowing Driveways</li>
+                <li>Plowing Parkinglots</li>
+              </ul>
           </div>
-          <div class="col-md-5">
-            <img class="featurette-image img-fluid mx-auto" src="media/snowPlow2.jpg">
+          <div class="col-md-5" style="padding-top: 12rem">
+            <img class="featurette-image img-fluid mx-auto img-thumbnail" src="media/snowPlow2.jpg">
           </div>
         </div>
 
         <hr class="featurette-divider">
-      </div><!-- /.container -->
+      </div>
 
-
-      <!-- FOOTER -->
       <footer class="container">
         2017 Yardtechs, Inc.
         <div class="float-right">
-            <a href="#" title="Call or Email" data-toggle="popover" data-html="true" data-trigger="hover" data-content="614.496.6921<br/>Bob@YardTechs.com">Contact Us</a>
+            <a href="#" title="Call or Email" data-toggle="popover" data-placement="top" data-html="true" data-trigger="hover" data-content="614.496.6921<br/>Bob@YardTechs.com">Contact Us</a>
             &nbsp; | &nbsp; 
-            <a href="#" title="Not Available" data-toggle="popover" data-html="true" data-trigger="hover" data-content="Online payment is not yet available. Please contact us.">Payment</a>
+            <a href="#" title="Not Available" data-toggle="popover" data-placement="top" data-html="true" data-trigger="hover" data-content="Online payment is not yet available. Please contact us.">Payment</a>
             &nbsp; | &nbsp; 
             <a href="#">Back to top</a>
         </div>
